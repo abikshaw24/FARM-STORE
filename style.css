@@ -1,53 +1,62 @@
-*{
-    font-family: sans-serif;
-}
-
-header{
-    display:flex;
-    justify-content: space-around;
-    background-color: rgba(106, 180, 180, 0.403);
-}
-
-header .logo{
+.header{
     display: flex;
-    font-size:28px;
-    font-weight: 900;
+    justify-content: space-between;
+    margin: 50px 0px;
+    background-color: rgb(148, 220, 196);
 }
+.header-image{
+    width:40px;
+    height: 40px; 
+    padding: 6px;
+    margin:30px;
+}
+.header-left{
+    margin-top: 0px;
+}
+.header-right{
+    margin:50px;
+}
+.header-left .leaf-icon{
+    width:200px;
 
-
-.icon1{
-    display: flex;
-    
 
 }
-header .logo .leaf img{
-    width:170px;
-    margin:60px;
+.header .farm{
+    font-size: 20px;
 
-
-} 
-
-.icon1 img{
-    width:100px;
-    margin:70px;
-}
-
-.navbar a{
-    text-decoration: none;
-    padding:10px;
-    font-size: 30px;
-    color:black;
-    font-weight: 600;
   
+    
+}
+.farm .h2{
+    font-size: 40px;
+
+    
+}
+.farm .p{
+    font-size:25px;
+    font-weight: 200px;
 }
 
-.navbar{
-    margin:100px;
+.header-left{
+    display: flex;
 }
 
-.navbar a:hover{
-    color:green
+.nav{
+    margin-top: 90px;
+   
+   
+
 }
+.nav a{
+     text-decoration: none;
+     font-size: 25px;
+     padding: 30px;
+     color: black;
+     font-weight: 500;
+
+     
+}
+
 
 .slider {
     width: 100%;
