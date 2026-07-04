@@ -45,8 +45,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </header>
 
 <section>
-    <div class="slider">
-      <div class="slides">
+    <div class="slider-1">
+      <div class="slides-1">
         <img src="assets/slide1.jpg" alt="Image 1">
         <img src="assets/slide2.jpg" alt="Image 1">
         <img src="assets/slide3.jpg" alt="Image 1">
@@ -366,7 +366,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             </div>
             <div class="offer2">
             <div class="photo2"><img src="healthy.jpg"></div>
-            <div class="photo3"><img src="people.jpg"></div>
+            <div class="photo3"><img src="veg.jpg"></div>
             </div>
 </section>
 <section class="team">
@@ -469,75 +469,140 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 </section>
 <section class="faq-section">
 
-    <!-- Left Card -->
-    <div class="product-card">
+    <!-- LEFT SLIDER -->
 
-        <div class="image-box">
-            <img src="peaches.jpg" alt="">
+    <div class="slider">
+
+        <div class="slides">
+
+            <div class="slide active">
+
+                <img src="assets/wheat.jpeg">
+
+                <h2>WHITE RICE</h2>
+
+                <div class="price">
+                    <span class="old-1">$18.00</span>
+                    <span class="new-1">$13.00</span>
+                </div>
+
+            </div>
+
+            <div class="slide">
+
+                <img src="assets/pine.jpeg">
+
+                <h2>PINEAPPLE</h2>
+
+                <div class="price">
+                    <span class="old-1">$22.00</span>
+                    <span class="new-1">$17.00</span>
+                </div>
+
+            </div>
+
+            <div class="slide">
+
+                <img src="assets/peach.jpeg">
+
+                <h2>ORGANIC CARROT</h2>
+
+                <div class="price">
+                    <span class="old-1">$15.00</span>
+                    <span class="new-1">$11.00</span>
+                </div>
+
+            </div>
+
         </div>
 
-        <h2>PEACHES</h2>
-
-        <div class="price">
-            <span class="old1">$20.00</span>
-            <span class="new1">$15.00</span>
-        </div>
+        <!-- DOTS -->
 
         <div class="dots">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
+
+            <span class="dot active"></span>
+
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+
         </div>
 
     </div>
 
+    <!-- RIGHT FAQ -->
 
-    <!-- Right FAQ -->
-    <div class="faq-content">
+    <div class="faq">
 
         <h4>Benefits of Organic Produce</h4>
 
         <h1>ORGANIC FOOD FAQ</h1>
 
-        <div class="faq-item active">
+        <div class="accordion">
 
-            <div class="faq-title">
-                <div class="icon yellow">
-                    <i class="fa-solid fa-angle-down"></i>
+            <div class="item active">
+
+                <div class="question">
+
+                    <span class="icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+
+                    <h3>What does "organic" mean?</h3>
+
                 </div>
 
-                <h3>What does "organic" mean?</h3>
+                <div class="answer">
+
+                    Organic products are grown in environmentally friendly
+                    ways. Toxic pesticides and agricultural chemicals are
+                    prohibited. Organic farming also conserves soil and water
+                    while using renewable resources.
+
+                </div>
+
             </div>
 
-            <p>
-                Organic products are grown in environmentally friendly ways.
-                Toxic or persistent pesticides and other agricultural chemicals
-                are prohibited. There is also a focus on renewable resources
-                and the conservation of soil and water.
-            </p>
+            <div class="item">
 
-        </div>
+                <div class="question">
 
-        <div class="faq-item">
+                    <span class="icon">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
 
-            <div class="faq-title">
-                <div class="icon">
-                    <i class="fa-solid fa-angle-right"></i>
+                    <h3>Why eat organic?</h3>
+
                 </div>
 
-                <h3>Why eat organic?</h3>
+                <div class="answer">
+
+                    Organic food contains fewer chemical residues and supports
+                    sustainable agriculture while protecting the environment.
+
+                </div>
+
             </div>
 
-        </div>
+            <div class="item">
 
-        <div class="faq-item">
+                <div class="question">
 
-            <div class="faq-title">
-                <div class="icon">
-                    <i class="fa-solid fa-angle-right"></i>
+                    <span class="icon">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+
+                    <h3>Is organic food healthier?</h3>
+
                 </div>
 
-                <h3>Is organic food healthier?</h3>
+                <div class="answer">
+
+                    Organic foods often contain higher antioxidants and are
+                    produced without synthetic pesticides and fertilizers.
+
+                </div>
+
             </div>
 
         </div>
@@ -545,7 +610,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </div>
 
 </section>
-
 <!-- Bottom Logos -->
 <section class="brands">
 
@@ -556,61 +620,64 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <img src="assets/logo5.webp" alt="">
 
 </section>
-
 <section class="blog-section">
 
-    <h3>Latest News</h3>
+    <h4>Latest News</h4>
     <h1>OUR BLOG</h1>
 
-    <div class="blog-container">
+    <div class="slider-container-1">
 
-        <div class="blog-card">
+        <button class="nav-btn prev" onclick="moveSlide(-1)">
+            &#10094;
+        </button>
 
-            <div class="blog-img">
-                <img src="assets/blog1.jpg" alt="">
+        <div class="blog-slider">
+
+            <div class="blog-track">
+
+                <div class="blog-card">
+                    <img src="assets/blog1.jpg" alt="">
+                    <h3>Everyday Dinner Choices for a Healthier, Happier You</h3>
+                    <p>August 9, 2023</p>
+                </div>
+
+                <div class="blog-card">
+                    <img src="assets/blog2.jpg" alt="">
+                    <h3>Standardizing the Organic Industry in the USA</h3>
+                    <p>August 9, 2023</p>
+                </div>
+
+                <div class="blog-card">
+                    <img src="assets/blog3.jpg" alt="">
+                    <h3>Making Your Food Organic in a Few Simple Steps</h3>
+                    <p>August 9, 2023</p>
+                </div>
+
+                <div class="blog-card">
+                    <img src="assets/blog4.jpg" alt="">
+                    <h3>Top 5 Easy and Cheap Organic Breakfast Recipes</h3>
+                    <p>August 9, 2023</p>
+                </div>
+
+                <div class="blog-card">
+                    <img src="assets/blog5.jpg" alt="">
+                    <h3>Organic Farming Keeps Growing Worldwide</h3>
+                    <p>August 9, 2023</p>
+                </div>
+
+                <div class="blog-card">
+                    <img src="assets/blog6.jpg" alt="">
+                    <h3>Fresh Vegetables From Our Farm</h3>
+                    <p>August 9, 2023</p>
+                </div>
+
             </div>
-
-            <h2>Making Your Food Organic in a Few Simple Steps</h2>
-
-            <p>August 9, 2023</p>
 
         </div>
 
-        <div class="blog-card">
-
-            <div class="blog-img">
-                <img src="assets/blog2.jpg" alt="">
-            </div>
-
-            <h2>Top 5 Easy and Cheap Organic Breakfast Recipes</h2>
-
-            <p>August 9, 2023</p>
-
-        </div>
-
-        <div class="blog-card">
-
-            <div class="blog-img">
-                <img src="assets/blog3.jpg" alt="">
-            </div>
-
-            <h2>Why Organic Farming Keeps Getting Popular Globally</h2>
-
-            <p>August 9, 2023</p>
-
-        </div>
-
-        <div class="blog-card">
-
-            <div class="blog-img">
-                <img src="assets/blog4.jpg" alt="">
-            </div>
-
-            <h2>Everyday Dinner Choices for a Healthier, Happier You</h2>
-
-            <p>August 9, 2023</p>
-
-        </div>
+        <button class="nav-btn next" onclick="moveSlide(1)">
+            &#10095;
+        </button>
 
     </div>
 

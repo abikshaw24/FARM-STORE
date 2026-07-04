@@ -106,3 +106,150 @@ tabs.forEach((tab,index)=>{
     });
 
 });
+
+
+
+
+
+
+
+
+
+// ==============================
+// IMAGE SLIDER
+// ==============================
+
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+let currentSlide = 0;
+let slider;
+
+// Show Slide
+function showSlide(index){
+
+    // Remove Active Class
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    // Add Active Class
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+
+    currentSlide = index;
+}
+
+// Next Slide
+function nextSlide(){
+
+    currentSlide++;
+
+    if(currentSlide >= slides.length){
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+}
+
+// Auto Slide
+function startSlider(){
+
+    slider = setInterval(nextSlide,3000);
+
+}
+
+startSlider();
+
+
+// Click Dots
+dots.forEach((dot,index)=>{
+
+    dot.addEventListener("click",()=>{
+
+        clearInterval(slider);
+
+        showSlide(index);
+
+        startSlider();
+
+    });
+
+});
+
+
+// ==============================
+// FAQ ACCORDION
+// ==============================
+
+const items = document.querySelectorAll(".item");
+
+items.forEach(item=>{
+
+    const question = item.querySelector(".question");
+
+    question.addEventListener("click",()=>{
+
+        items.forEach(i=>{
+
+            if(i!==item){
+
+                i.classList.remove("active");
+
+                i.querySelector("i").classList.remove("fa-chevron-down");
+                i.querySelector("i").classList.add("fa-chevron-right");
+
+            }
+
+        });
+
+        item.classList.toggle("active");
+
+        const icon = item.querySelector("i");
+
+        if(item.classList.contains("active")){
+
+            icon.classList.remove("fa-chevron-right");
+            icon.classList.add("fa-chevron-down");
+
+        }else{
+
+            icon.classList.remove("fa-chevron-down");
+            icon.classList.add("fa-chevron-right");
+
+        }
+
+    });
+
+});
+
+
+
+
+
+
+let index = 0;
+
+function moveSlide(direction){
+
+    const track = document.querySelector(".blog-track");
+
+    const cards = document.querySelectorAll(".blog-card");
+
+    const cardWidth = cards[0].offsetWidth + 20;
+
+    const visibleCards = 4;
+
+    const maxIndex = cards.length - visibleCards;
+
+    index += direction;
+
+    if(index < 0){
+        index = 0;
+    }
+
+    if(index > maxIndex){
+        index = maxIndex;
+    }
+
+    track.style.transform = `translateX(-${index * cardWidth}px)`;
+}
