@@ -253,3 +253,94 @@ function moveSlide(direction){
 
     track.style.transform = `translateX(-${index * cardWidth}px)`;
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        let isValid = true;
+
+        // Inputs
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const phone = document.getElementById("phone");
+        const address = document.getElementById("address");
+        const message = document.getElementById("message");
+
+        // Remove previous errors
+        document.querySelectorAll(".error").forEach(function(error){
+            error.innerHTML = "";
+        });
+
+        document.querySelectorAll("input, textarea").forEach(function(field){
+            field.style.border = "1px solid #ccc";
+        });
+
+        // Name
+        if(name.value.trim() === ""){
+            showError(name,"Name is required");
+            isValid = false;
+        }
+        else if(!/^[A-Za-z ]+$/.test(name.value.trim())){
+            showError(name,"Only letters are allowed");
+            isValid = false;
+        }
+
+        // Email
+        if(email.value.trim() === ""){
+            showError(email,"Email is required");
+            isValid = false;
+        }
+        else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())){
+            showError(email,"Enter a valid email");
+            isValid = false;
+        }
+
+        // Phone
+        if(phone.value.trim() === ""){
+            showError(phone,"Phone number is required");
+            isValid = false;
+        }
+        else if(!/^[0-9]{10}$/.test(phone.value.trim())){
+            showError(phone,"Enter a valid 10 digit phone number");
+            isValid = false;
+        }
+
+        // Address
+        if(address.value.trim() === ""){
+            showError(address,"Address is required");
+            isValid = false;
+        }
+
+        // Message
+        if(message.value.trim() === ""){
+            showError(message,"Message is required");
+            isValid = false;
+        }
+
+        // Success
+        if(isValid){
+
+            alert("Form Submitted Successfully!");
+
+            form.reset();
+
+        }
+
+    });
+
+    function showError(input,message){
+
+        input.style.border = "2px solid red";
+
+        input.nextElementSibling.innerHTML = message;
+
+    }
+
+});
