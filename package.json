@@ -1,0 +1,27 @@
+{
+  "name": "farm",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/abikshaw24/FARM-STORE#readme",
+  "bugs": {
+    "url": "https://github.com/abikshaw24/FARM-STORE/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abikshaw24/FARM-STORE.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.19.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mongoose": "^9.9.1",
+    "mysql2": "^3.23.3"
+  }
+}
