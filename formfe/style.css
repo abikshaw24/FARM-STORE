@@ -10,13 +10,6 @@ body{
     overflow-x:hidden;
 }
 .header{
-<<<<<<< HEAD:formfe/style.css
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 0px;
-    background-color: rgb(148, 220, 196);
-    position: sticky;
-=======
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -34,7 +27,6 @@ body{
     left:0;
     z-index:1000;
     
->>>>>>> 7286b8471a6fa161c58219a38cfebba4f2de82c3:style.css
 }
 .header-image{
     width:60px;
@@ -95,79 +87,6 @@ body{
      
 }
 
-<<<<<<< HEAD:formfe/style.css
-
-.slider-1 {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-/* Images Container */
-.slides-1 {
-    display: flex;
-    width: 500%;
-    animation: slide 10s infinite;
-}
-
-/* Images */
-.slides-1 img {
-    width: 20%;
-    height: 1000px;
-    object-fit: cover;
-}
-
-.banner::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-}
-
-.banner-content{
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    color: #fff;
-    z-index: 1;
-    max-width: 500px;
-}
-
-.banner-content h4{
-    font-size: 20px;
-    color: #9acd32;
-    margin-bottom: 10px;
-}
-
-.banner-content h1{
-    font-size: 55px;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-.banner-content p{
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
-
-.btn{
-    display: inline-block;
-    text-decoration: none;
-    background: #6dbd45;
-    color: #fff;
-    padding: 14px 35px;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.btn:hover{
-    background: #4f9d2f;
-}
-/*ANIMATION*/
-=======
 .dropdown{
     position:relative;
 }
@@ -197,7 +116,6 @@ body{
     color:#f7f7f7;
     transition:0.3s;
 }
->>>>>>> 7286b8471a6fa161c58219a38cfebba4f2de82c3:style.css
 
 .dropdown-content a:hover{
     background: rgb(148, 220, 196);
@@ -1061,25 +979,6 @@ font-size:22px;
 
 .blog-card p{
     color:gray;
-<<<<<<< HEAD:formfe/style.css
-}
-
-.nav-btn{
-    width:45px;
-    height:45px;
-    border:none;
-    background:white;
-    cursor:pointer;
-    font-size:28px;
-    border-radius:50%;
-    box-shadow:0 0 8px rgba(0,0,0,.2);
-}
-
-.nav-btn:hover{
-    background:#6ab04c;
-    color:white;
-=======
->>>>>>> 7286b8471a6fa161c58219a38cfebba4f2de82c3:style.css
 }
 
 .nav-btn{
