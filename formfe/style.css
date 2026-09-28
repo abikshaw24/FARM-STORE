@@ -26,6 +26,7 @@ body{
     top:0;
     left:0;
     z-index:1000;
+    height:200px;
     
 }
 .header-image{
@@ -70,14 +71,14 @@ body{
     display: flex;
     padding:  0px 30px;
     justify-content: space-evenly;
-    gap:70px;
+    gap:20px;
    
    
 
 }
 .nav a{
      text-decoration: none;
-     font-size: 40px;
+     font-size: 20px;
      padding: 60px;
      gap:30px;
      color: rgb(102, 4, 4);
