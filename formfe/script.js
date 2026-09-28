@@ -72,7 +72,7 @@ form.addEventListener("submit",async function (e) {
 
     try {
 
-    await axios.post("http://localhost:4000/visitors", formData);
+    await axios.post("https://farm-store-1.onrender.com/visitors", formData);
     console.log(formData);
         form.reset();
 
