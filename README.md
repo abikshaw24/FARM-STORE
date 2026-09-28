@@ -15,7 +15,7 @@ A full-stack **Farm Organic Store** web application built using **HTML, CSS, Jav
 * API Endpoints
 * Database
 * Future Enhancements
-* Author
+
 
 ---
 
