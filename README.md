@@ -32,7 +32,7 @@ The home page is designed with a modern organic theme and provides an engaging u
 
 ### Home Page Screenshot
 
-home.png
+![Home Page](assets/home.png)
 
 ---
 
@@ -42,7 +42,8 @@ The hero section contains an automatic image slider that rotates images every **
 
 ### Hero Slider Screenshot
 
-heroslider.png
+
+![Hero Slider](assets/heroslider.png)
 
 ---
 
@@ -60,7 +61,7 @@ The products section displays all available organic products with attractive pro
 
 ### Products Screenshot
 
-products.png
+![Products](assets/products.png)
 
 ---
 
@@ -83,7 +84,7 @@ The website includes customer testimonials to improve trust and user engagement.
 
 ### Testimonials Screenshot
 
-testimonials.png
+![Testimonials](assets/testimonials.png)
 
 ---
 
@@ -92,8 +93,8 @@ testimonials.png
 The FAQ section answers common customer questions with an interactive layout.
 
 ### FAQ Screenshot
+![FAQ](assets/faq.png)
 
-faq.png
 
 ---
 
@@ -102,8 +103,8 @@ faq.png
 The blog section displays articles related to organic farming and healthy living.
 
 ### Blog Screenshot
+![Blog](assets/blog.png)
 
-blog.png
 
 ---
 
@@ -112,14 +113,14 @@ blog.png
 Customers can easily locate the store through the location section.
 
 ### Location Screenshot
-
-location.png
+![Location](assets/location.png)
 
 ---
 
 # 📞 Contact Form
 
 The contact form collects customer details and stores them in the MySQL database through the Express backend.
+![Contact Form](assets/contact.png)
 
 ## JavaScript Validation
 
@@ -130,11 +131,6 @@ The contact form collects customer details and stores them in the MySQL database
 * Message validation
 * Success and error messages
 
-### Contact Form Screenshot
-
-form.png
-
----
 
 # 🦶 Footer
 
@@ -149,7 +145,7 @@ The footer provides quick navigation and important contact information.
 
 ### Footer Screenshot
 
-footer.png
+![Footer](assets/footer.png)
 
 ---
 
@@ -243,7 +239,7 @@ Farm-Organic-Store/
 * JSON request handling using `express.json()`
 * CRUD operations implemented using MySQL queries
 
-backend.png
+![Backend](assets/server.png)
 
 __________________________________________________________________________________________
 
@@ -255,7 +251,8 @@ ________________________________________________________________________________
 * Stores visitor details submitted through the contact form
 * Secure backend communication using SQL queries
 
-sql.png
+![MySQL Connection](assets/sql.png)
+
 
 ---
 
@@ -299,10 +296,3 @@ The application is optimized for:
 
 ---
 
-# 👨‍💻**Abikshaw L**
-
-* GitHub: https://github.com/abikshaw24/
-
----
-
-#
