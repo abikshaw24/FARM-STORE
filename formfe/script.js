@@ -6,7 +6,7 @@ const phone = document.getElementById("phone");
 const address = document.getElementById("address");
 const message = document.getElementById("message");
 
-form.addEventListener("submit",async function (e) {
+form.addEventListener("submit",async function (e) {  
 
     e.preventDefault();
   
