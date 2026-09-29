@@ -1478,3 +1478,366 @@ select:focus{
     padding:20px;
     font-size:15px;
 }
+
+/* =========================
+   OVERFLOW & RESPONSIVE FIX
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* ---------- HEADER ---------- */
+
+.header {
+    width: 100%;
+    max-width: 100%;
+}
+
+.nav {
+    max-width: 100%;
+}
+
+.nav a {
+    padding: 15px 20px;
+}
+
+/* ---------- ABOUT ---------- */
+
+.about {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    gap: 40px;
+}
+
+.left,
+.right {
+    max-width: 50%;
+}
+
+.left img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin-left: 0;
+}
+
+.right {
+    margin-right: 0;
+    padding: 20px;
+}
+
+.right h1 {
+    font-size: 50px;
+}
+
+/* ---------- FEATURES ---------- */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.box {
+    width: 25%;
+}
+
+/* ---------- PRODUCTS ---------- */
+
+.grid {
+    width: 100%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.card img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.add-cart {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- TESTIMONIAL ---------- */
+
+.testimonial-container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.card1 {
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* ---------- OFFERS ---------- */
+
+.offer {
+    width: 100%;
+    max-width: 100%;
+}
+
+.offer img,
+.offer1 img,
+.offer2 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+/* ---------- FAQ ---------- */
+
+.faq-section {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* ---------- BRANDS ---------- */
+
+.brands {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.brands img {
+    width: 100%;
+    max-width: 180px;
+    padding: 20px;
+}
+
+/* ---------- TEAM ---------- */
+
+.heading {
+    margin-left: 0;
+}
+
+.team-container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.member {
+    right: 0;
+}
+
+.member img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* ---------- CONTACT FORM ---------- */
+
+.container-3 {
+    width: 90%;
+    max-width: 900px;
+}
+
+form {
+    width: 100%;
+    max-width: 100%;
+}
+
+input,
+textarea,
+select {
+    max-width: 100%;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    width: 100%;
+    max-width: 100%;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-box input {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        height: auto;
+        min-height: 100px;
+        padding: 10px 15px;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .header-left,
+    .header-right {
+        margin: 0;
+        width: 100%;
+    }
+
+    .header-left {
+        justify-content: center;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .nav a {
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+
+    .slider-1 {
+        margin: 30px 0;
+    }
+
+    .slides-1 {
+        height: 500px;
+    }
+
+    .slide-1 img {
+        height: 500px;
+    }
+
+    .content-1 h1 {
+        font-size: 45px;
+    }
+
+    .content-1 h2 {
+        font-size: 30px;
+    }
+
+    .content-1 p {
+        font-size: 20px;
+    }
+
+    /* About */
+
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left,
+    .right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .left img {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .right {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .right h1 {
+        font-size: 38px;
+    }
+
+    /* Features */
+
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    /* Products */
+
+    .grid {
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* Testimonials */
+
+    .testimonial-container {
+        width: 95%;
+    }
+
+    .card1 {
+        width: 100%;
+        padding: 30px;
+    }
+
+    /* FAQ */
+
+    .faq-section {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .slider,
+    .faq {
+        width: 100%;
+    }
+
+    /* Brands */
+
+    .brands {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Team */
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member img {
+        max-width: 100%;
+    }
+
+    /* Footer */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
